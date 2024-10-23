@@ -3,13 +3,12 @@ import Layout from "./Layout.astro";
 import StyledMarkdown from "../components/StyledMarkdown.astro";
 
 type Props = {
-    frontmatter: {
-        title: string;
-    }
+	frontmatter: {
+		title: string;
+	};
 };
 
 const { frontmatter } = Astro.props;
-
 ---
 
 <Layout title={frontmatter.title}>
