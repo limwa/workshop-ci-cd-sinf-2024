@@ -1,0 +1,15 @@
+---
+type Props = {
+    href: string
+    class?: string
+};
+
+const { href, class: className } = Astro.props;
+
+const mappedUrl = href.startsWith('/')
+    ? `/${import.meta.env.BASE_URL}/${href}`.replaceAll('//', '/')
+    : href;
+---
+<a href={mappedUrl} class={className}>
+    <slot />
+</a>
