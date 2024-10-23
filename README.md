@@ -44,3 +44,19 @@ After this has been achieved, you will need to add [a new article](https://raw.g
 >
 > 1. Don't forget to enable GitHub Pages in your repository settings. Go to *Settings* > *Pages* and change *Build and Deployment* > *Source* to *GitHub Actions*.
 > 2. Don't forget to change `repositoryName` in `astro.config.mjs` to the name of your repository.
+
+# My solution
+
+I implemented the tasks outlined above in three PRs:
+
+- https://github.com/limwa/workshop-ci-cd-sinf-2024/pull/1 adds the CI/CD workflow to the repository
+    
+    - The PR was merged with some status checks failing, but it was done on purpose to show that even then the website would not be deployed.
+
+- https://github.com/limwa/workshop-ci-cd-sinf-2024/pull/2 formats the code
+
+    - This is done so that all status checks pass and the website is deployed.
+
+- https://github.com/limwa/workshop-ci-cd-sinf-2024/pull/3 adds a new article to the website
+
+    - This shows that when the website is only redeployed when a `push` happens on the `main` branch.
