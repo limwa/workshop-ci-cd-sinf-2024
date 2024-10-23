@@ -5,7 +5,7 @@ import tailwind from '@astrojs/tailwind';
 
 import mdx from '@astrojs/mdx';
 
-const repositoryName = "workshop-sinf-2024-ci-cd";
+const repositoryName = "workshop-ci-cd-sinf-2024";
 
 // https://astro.build/config
 export default defineConfig({
